@@ -292,6 +292,7 @@ a {
 .card-img-container>img {
   width: 507px;
   height: 500px;
+  object-fit: cover;
 }
 
 .cards-body {
