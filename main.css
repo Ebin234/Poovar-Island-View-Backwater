@@ -48,12 +48,10 @@ body::-webkit-scrollbar {
 }
 
 .nav-bar {
-  width: 670px;
   height: 30px;
   top: 73px;
   left: 903px;
   gap: 48px;
-  opacity: 0px;
 
   /* .nav-items {
     font-family: Poppins;
