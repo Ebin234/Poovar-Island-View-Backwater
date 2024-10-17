@@ -347,31 +347,69 @@ a {
 }
 
 .dropdown {
-  padding: 25px 0;
+  padding: 20px 0;
 }
 
-.dropdown>div {
+.dropdown > div {
   height: 60px;
-  border: 1px solid;
+  border: 1px solid #1A2753;
+  border-radius: 8px;
   display: flex;
   align-items: center;
-  /* padding-left: 20px; */
   justify-content: space-between;
-  padding: 0 25px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  background-color: #f5f7fa;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.dropdown>div>img {
+.dropdown > div:hover {
+  background-color: #e0e4ed;
+}
+
+.dropdown > div img {
   width: 16px;
   height: 8px;
+  transition: transform 0.3s ease;
 }
 
-.dropdown>div>p {
-  font-family: Poppins;
-  font-size: 24px;
+.dropdown > div p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 36px;
   color: #1A2753;
 }
+
+.dropdown-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
+  padding: 0 20px;
+  background-color: #fff;
+  border-left: 1px solid #1A2753;
+  border-right: 1px solid #1A2753;
+  border-bottom: 1px solid #1A2753;
+  border-radius: 0 0 8px 8px;
+}
+
+.dropdown-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  padding: 10px 0;
+}
+
+/* When accordion is open */
+.dropdown.open > div img {
+  transform: rotate(180deg);
+}
+
+.dropdown.open .dropdown-content {
+  max-height: 300px; /* Set a reasonable height to fit the content */
+  padding: 15px 20px;
+}
+
 
 
 
@@ -469,14 +507,14 @@ a {
   font-size: 32px;
   font-weight: 600;
   line-height: 48px;
-  /* text-align: center; */
+  text-align: center;
   color: #5F5F5F;
 }
 
 .gal-img-container {
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   gap: 25px;
   padding-top: 20px;
