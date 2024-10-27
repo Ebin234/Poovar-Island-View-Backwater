@@ -116,3 +116,44 @@ Rguid.addEventListener('click', function () {
     stay.style.height='100%'
   }
 })
+
+// const z = document.getElementsByClassName("nav-items")
+// const x = document.getElementById("nav")
+// x.addEventListener('click',function(){
+//   let a = window.location.hash
+//   console.log(a);
+  
+// })
+// z.addEventListener('click',function(){
+//   let a = window.location.hash
+//   console.log(a)
+// })
+
+const navLinks = document.querySelectorAll('.nav-items');
+  
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      navLinks.forEach(item => item.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+
+// JavaScript
+let currentBanner = 0;
+const banners = document.querySelectorAll('.banner-img');
+const bannerCount = banners.length;
+
+function showNextBanner() {
+  // Hide the current banner
+  banners[currentBanner].classList.remove('active');
+  
+  // Move to the next banner
+  currentBanner = (currentBanner + 1) % bannerCount;
+  
+  // Show the next banner
+  banners[currentBanner].classList.add('active');
+}
+
+// Change banner every 2 seconds
+setInterval(showNextBanner, 3000);
+
