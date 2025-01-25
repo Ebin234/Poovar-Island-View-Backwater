@@ -28,42 +28,42 @@ const Bguid1 = document.getElementById('Bguid-1')
 const card1 = document.getElementById('card1')
 
 Bkey.addEventListener('click', function () {
-  Bguid1.style.display = 'none'
-  Bmap1.style.display = 'none'
+  // Bguid1.style.display = 'none'
+  // Bmap1.style.display = 'none'
 
   if (Bkey1.style.display == 'none' || Bkey1.style.display == '') {
     Bkey1.style.display = 'flex'
-    card1.style.height='800px'
+    // card1.style.height='800px'
   } else {
     Bkey1.style.display = 'none'
-    card1.style.height='100%'
+    // card1.style.height='100%'
   }
 })
 
 Bmap.addEventListener('click', function () {
-  Bkey1.style.display = 'none'
-  Bguid1.style.display = 'none'
+  // Bkey1.style.display = 'none'
+  // Bguid1.style.display = 'none'
 
   if (Bmap1.style.display == 'none' || Bmap1.style.display == '') {
     Bmap1.style.display = 'flex'
-    card1.style.height='800px'
+    // card1.style.height='800px'
   } else {
     Bmap1.style.display = 'none'
-    card1.style.height='100%'
+    // card1.style.height='100%'
   }
 })
 
 
 Bguid.addEventListener('click', function () {
-  Bkey1.style.display = 'none'
-  Bmap1.style.display = 'none'
+  // Bkey1.style.display = 'none'
+  // Bmap1.style.display = 'none'
 
   if (Bguid1.style.display == 'none' || Bguid1.style.display == '') {
     Bguid1.style.display = 'flex'
-    card1.style.height='800px'
+    // card1.style.height='800px'
   } else {
     Bguid1.style.display = 'none'
-    card1.style.height='100%'
+    // card1.style.height='100%'
   }
 })
 
@@ -78,42 +78,42 @@ const Rguid1 = document.getElementById('Rguid-1')
 const stay = document.getElementById('stay')
 
 Rkey.addEventListener('click', function () {
-  Rguid1.style.display = 'none'
-  Rmap1.style.display = 'none'
+  // Rguid1.style.display = 'none'
+  // Rmap1.style.display = 'none'
 
   if (Rkey1.style.display == 'none' || Rkey1.style.display == '') {
     Rkey1.style.display = 'flex'
-    stay.style.height='800px'
+    // stay.style.height='800px'
   } else {
     Rkey1.style.display = 'none'
-    stay.style.height='100%'
+    // stay.style.height='100%'
   }
 })
 
 Rmap.addEventListener('click', function () {
-  Rkey1.style.display = 'none'
-  Rguid1.style.display = 'none'
+  // Rkey1.style.display = 'none'
+  // Rguid1.style.display = 'none'
 
   if (Rmap1.style.display == 'none' || Rmap1.style.display == '') {
     Rmap1.style.display = 'flex'
-    stay.style.height='800px'
+    // stay.style.height='800px'
   } else {
     Rmap1.style.display = 'none'
-    stay.style.height='100%'
+    // stay.style.height='100%'
   }
 })
 
 
 Rguid.addEventListener('click', function () {
-  Rkey1.style.display = 'none'
-  Rmap1.style.display = 'none'
+  // Rkey1.style.display = 'none'
+  // Rmap1.style.display = 'none'
 
   if (Rguid1.style.display == 'none' || Rguid1.style.display == '') {
     Rguid1.style.display = 'flex'
-    stay.style.height='800px'
+    // stay.style.height='800px'
   } else {
     Rguid1.style.display = 'none'
-    stay.style.height='100%'
+    // stay.style.height='100%'
   }
 })
 

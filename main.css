@@ -43,6 +43,10 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
+.logo{
+  width: 115px;
+}
+
 #nav {
   display: flex;
 }
@@ -140,14 +144,16 @@ a {
 .button-container{
   position: relative;
   top: 100px;
-  left: 442px;
+  /* left: 442px; */
+  display: flex;
+  justify-content: center;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   gap: 23px;
-  padding-left: 35px;
+  /* padding-left: 35px; */
 }
 
 .buttons>a>button {
@@ -255,6 +261,8 @@ height: 500px;
 .card-img-container {
   width: 537px;
   height: 700px;
+  position: sticky;
+  top: 125px;
 }
 
 .card-img-container>p {
@@ -279,7 +287,10 @@ height: 500px;
 }
 
 .cards-container {
-  display: flex;
+  display: flex; 
+
+  flex-wrap: wrap;
+
   justify-content: center;
   /* align-items: center; */
   gap: 75px;
@@ -289,7 +300,8 @@ height: 500px;
 .card-content {
   display: flex;
   flex-direction: column;
-  height: 700px;
+  /* height: 700px; */
+  width: 600px;
 }
 
 .card-content>h4 {
@@ -705,6 +717,7 @@ height: 500px;
 
 .footer-container>div {
   /* padding: 40px 30px; */
+  padding: 0px;
 }
 
 .footer-logo>p {
