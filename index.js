@@ -46,6 +46,7 @@ Bmap.addEventListener('click', function () {
 
   if (Bmap1.style.display == 'none' || Bmap1.style.display == '') {
     Bmap1.style.display = 'flex'
+    Bmap1.style.flexDirection = 'column'
     // card1.style.height='800px'
   } else {
     Bmap1.style.display = 'none'
@@ -96,6 +97,7 @@ Rmap.addEventListener('click', function () {
 
   if (Rmap1.style.display == 'none' || Rmap1.style.display == '') {
     Rmap1.style.display = 'flex'
+    Rmap1.style.flexDirection = 'column'
     // stay.style.height='800px'
   } else {
     Rmap1.style.display = 'none'
